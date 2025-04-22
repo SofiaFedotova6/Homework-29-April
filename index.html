@@ -1,0 +1,32 @@
+//Задача 1
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет оплаты за воду</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Расчет оплаты за воду</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="waterUsed">Расход воды (кубов):</label>
+                <input type="number" id="waterUsed" value="12.5" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="pricePerCube">Стоимость за куб (руб.):</label>
+                <input type="number" id="pricePerCube" value="42.8" step="0.1">
+            </div>
+            <button id="calculateWater">Рассчитать</button>
+            <div class="result" id="waterResult">
+                <p>Расход воды: <span id="usedWaterOutput">12.5</span> кубов</p>
+                <p>Стоимость за куб: <span id="waterPriceOutput">42.8</span> рублей</p>
+                <p class="total">Итого к оплате: <span id="totalWaterCost">535</span> рублей</p>
+            </div>
+        </div>
+    </div>
+    <script src="water-script.js"></script>
+</body>
+</html>
